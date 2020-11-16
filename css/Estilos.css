@@ -1,0 +1,241 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+    background: url(../imag/fondo.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 10%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+.icon {
+	color:white;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+	transition: all .5s;
+}
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+}
+.card1{
+    background: rgba(111, 149, 81, 0.5);
+    margin-top: 138px;
+    margin-left: 35px;
+    border-radius: 19px;
+}
+.card2{
+    background: rgba(228, 170, 20, 0.5);
+    margin-top: 138px;
+    margin-left: 55px;
+    border-radius: 19px;
+}
+.card3{
+    background: rgba(106, 86, 125, 0.5);
+    margin-top: 138px;
+    margin-left: 65px;
+    border-radius: 19px;
+}
+.numberCircle1 {
+    font: 32px Arial, sans-serif;
+    width: 52px;
+    height: 42px;
+    box-sizing: initial;
+    position: absolute;
+    margin-left: 140px;
+    margin-top: -56px;
+    background-color: green;
+    text-align: center;
+    border-radius: 50%;    
+    color: lightyellow;
+    line-height: 2em;
+    box-sizing: content-box;   
+}
+.numberCircle2 {
+    font: 32px Arial, sans-serif;
+    width: 52px;
+    height: 42px;
+    box-sizing: initial;
+    position: absolute;
+    margin-left: 125px;
+    margin-top:  -7px;
+    background-color: #FDD835 ;
+    text-align: center;
+    border-radius: 50%;    
+    color: lightyellow;
+    line-height: 2em;
+    box-sizing: content-box;   
+}
+.numberCircle3 {
+    font: 32px Arial, sans-serif;
+    width: 52px;
+    height: 42px;
+    box-sizing: initial;
+    position: absolute;
+    margin-left: 144px;
+    margin-top: 6px;
+    background-color: purple;
+    text-align: center;
+    border-radius: 50%;    
+    color: lightyellow;
+    line-height: 2em;
+    box-sizing: content-box;   
+}
+.Title{
+    font-size: 80px;
+    color: #820b92;
+}
+.text{
+    text-align:left;
+    margin-left: 50px;   
+}
+input.src{
+    padding: 9px, 10px, 9px, 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #a50559;
+}
+.button{
+    border-radius: 46.5px;
+    width: 52px;
+    height: 52px;
+    left: 544px;
+    top: 653px;
+    background-color: #820b92;
+    color: #fff;
+}
+.whitetext{
+    font-size: 15px;
+    color: #fff;
+    text-align: left
+}
+.card1tx1{
+    margin-top: -60px;
+    margin-left: 150px;
+    color: #fff;
+    font-size: 30px;
+}
+.card2tx1{
+    margin-top: -50px;
+    margin-left: 130px;
+    color: #fff;
+    font-size: 30px;
+}
+.card3tx1{
+    margin-top: -50px;
+    margin-left: 130px;
+    color: #fff;
+    font-size: 30px;
+}
+.btn-group-justified{
+    margin-left: -150px;
+}
+
+.buttongr6{
+    margin-left: 722px;
+    margin-top:-50px;
+}
+#caja{
+    margin-left: 220px;
+    margin-top: 37px;
+}
+.Pdrink{
+    color: purple
+}
+.menu{
+	width: 200%;
+	max-width: 260px;
+	height: 480px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	margin-top: 20px;
+	float: left;
+}
+.menu .tarjetas{
+	width:210px;
+	height: 375px;
+	border-radius: 8px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.25s; 
+	background: white;
+}
+.menu .tarjetas:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.menu .tarjetas img{
+	width: 190px;
+	height: 190px;
+}
+.menu .tarjetas h4{
+	font-weight:600; 
+}
+.menu .tarjetas p{
+	padding: 0 1rem;
+	font-size: 16px;
+	font-weight: 300;
+}
+.menu .tarjetas a{
+	font-weight: 500;
+	text-decoration: none;
+	color: #3498db;
+}
+.button6{
+    border-radius: 46.5px;
+    width: 52px;
+    height: 52px;
+    margin-top: -100px;
+    margin-left: 132px;
+    background-color: #820b92;
+    color: #fff;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.cajtx1{
+    margin-left: -70px;   
+}
+.cajtx6{
+    margin-left: -70px;   
+    margin-top: -48px;
+}
+.btnPstion{
+    border-radius: 46.5px;
+    width: 52px;
+    height: 52px;
+    background-color:red;
+    color: #fff;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 45px;
+}

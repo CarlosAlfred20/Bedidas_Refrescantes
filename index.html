@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--links bootstrap css-->
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--uso de iconos, De la pagina web https://ionicons.com/v4/,para que su uso funcione debe estar conectado a internet..-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <!--Carpeta de iconos fonts y archivo css font.css,que permite mostrar los iconos de la barra social vertical...-->
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="main.css">
+    <!--titulo-->
+    <title>Bebidas Refrescantes</title>
+</head>
+<body>
+        <!--Menu navbar-->
+        <div>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav" style="margin: auto;"> 
+                          <li >
+                          <a class="nav-link text-light font-weight-bold" href="#">Home <span class="sr-only">(current)</span></a>
+                          </li>
+                          <li >
+                          <a class="nav-link text-light font-weight-bold" href="#">Smoothies</a>
+                          </li>
+                          <li >
+                            <a class="nav-link text-light font-weight-bold" href="#">About</a>
+                          </li>
+                          <li>
+                            <a class="nav-link text-light font-weight-bold" href="#">Contact</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!--titulo-->
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="Title">Enjoy!</h3>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+        <!--Texto Enjoy!-->
+        <div class="row">
+            <div class="col-md-4">
+                <p class="text text-light font-weight-bold">
+                    Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.
+                </p>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+         <!--Barra De busqueda-->
+         <div class="row">
+            <div class="col-md-4">
+                <input type="text" name="barra search" placeholder="  Search your drink" class="src" autocomplete="off">
+                <button type="button" class="button"><i class="icon ion-md-search"></i></button>
+            </div>
+            <div class=" col-m-8"></div>
+        </div>
+        <!--Iconos de barra social-->
+        <div class="social-bar">
+            <a href="#" class="icon icon-facebook" target="_blank"></a>
+            <a href="#" class="icon icon-twitter" target="_blank"></a>
+            <a href="#" class="icon icon-instagram" target="_blank"></a>
+        </div>
+        <!--tarjetas o Cards de boostrap-->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <div class="card1" style="width: 220px; height: 155px;">
+                    <div class="card-body" >
+                      <h5 class="whitetext">Blueberry Special </h5> <br>
+                      <div class="numberCircle1" style="font-size: 22px">20%</div>
+                      <p class="whitetext"> Calories: 20 kcal <br>Size: 10 oz.</p>
+                      <h5 class="card1tx1">$12</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card2" style="width: 200px; height: 162px;">
+                    <div class="card-body">
+                        <div class="numberCircle2" style="font-size: 22px">20%</div>
+                        <h5 class="whitetext">Blueberry Special</h5><br>
+                        <p class="whitetext">Calories: 20 kcal <br>Size: 10 oz.</p>
+                        <h5 class="card2tx1">$12</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="card3" style="width: 200px; height: 162px;">
+                   <div class="numberCircle3" style="font-size: 22px">20%</div>
+                    <div class="card-body">
+                       <h5 class="whitetext">Blueberry Special</h5><br>
+                       <p class="whitetext">Calories: 20 kcal <br>Size: 10 oz.</p>
+                       <h5 class="card3tx1">$12</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    <!--Grupos de botones-->
+        <div class="container">
+             <br><br>
+            <div class="btn-group">
+                  <button type="button" class="btn btn-lg">All</button>
+                  <!--Funcion Mostrar y ocultar-->
+                  <button type="button" value="Mostrar_ocultar" onclick="Mostrar_ocultar()" class="btn text-secondary btn-lg btn-outline-info">Popular Drink</button>
+                  <button type="button" class="btn btn-lg">Natural smoothe</button>
+                  <button type="button" class="btn btn-lg">Juices</button>
+                  <button type="button" class="btn btn-lg">Yogurt</button>
+            </div>
+            <div class="buttongr6">
+                 <button type="button" class="btn btn-lg">Filter </button>
+            </div>
+        </div>
+      <!--Section Caja que permite mostrar y ocultar y tarjetas dentro del Section Caja-->
+      <section id="caja" style="width: 1000px; height: 800px; ">
+        <h1 class="Pdrink">Popular Drink</h1>
+         <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco1.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+               <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                 <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+          <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco2.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	      </div>
+          <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco3.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                 <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+        <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco4.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                 <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+        <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco1.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+        <div class="menu">
+		    <div class="tarjetas">
+    			<img src="imag/imagen%20refresco2.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                 <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+       <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco3.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                 <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                <h5 class="cajtx6">$15.00 us</h5>
+		    </div>
+	    </div>
+       <div class="menu">
+		    <div class="tarjetas">
+			    <img src="imag/imagen%20refresco4.jpeg" alt="">
+			    <button type="button" class="btnPstion"><i class="icon ion-md-heart"></i></button>
+			    <h5>Stranberry and blue </h5>
+			    <p><font size="1"> Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Mi marius arcu aenean in 
+                    mauris elementum sed non in sapien enim.</font></p>
+                 <button type="button" class="button6"><i class="icon ion-md-basket"></i></button>
+                 <h5 class="cajtx6">$15.00 us</h5>   
+		    </div>
+	    </div>
+          </section>   
+       <!--Estructura if else que permite la programacion de mostrar y ocultar el Section de la caja
+       por medio del boton Popular Drink...-->
+        <script tyoe ="text/javascript">
+           function mostrar(){
+               document.getElementById("caja").style.display ="block";
+           }
+           function ocultar(){
+               document.getElementById("caja").style.display ="none";
+           }
+            function Mostrar_ocultar(){
+                var caja = document.getElementById("caja");
+                
+                if(caja.style.display == "none"){
+                   mostrar();
+                }else{
+                   ocultar();
+                }
+            }
+        </script>
+    <!--links Jquery y bootstrap js-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  
+</body>
+</html>
